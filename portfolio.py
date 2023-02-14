@@ -10,10 +10,6 @@ CSS = """
 h1, h2, h3, h5 {
     text-align: center;
 }
-
-.about {
-    text-align: center;
-}
 """
 
 st.write(f'<style>{CSS}</style>', unsafe_allow_html=True)
@@ -58,5 +54,5 @@ with st.container():
 
 
 st.write("---")
+st.write("[LinkedIn](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
 st.components.v1.html('<p><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></p>')
-# Where I dare to walk these days: Python (Flask, Bootstrap, Selenium, BeautifulSoup, Pandas, Matplotlib, Seaborn, NumPy and counting...), HTML5, CSS, JavaScript, SQL and Docker.
