@@ -1,5 +1,4 @@
 import streamlit as st
-from pdf2image import convert_from_path
 
 st.set_page_config(
     page_title="Rodrigo's Stuff",
