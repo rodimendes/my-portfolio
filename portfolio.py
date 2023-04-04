@@ -55,7 +55,14 @@ st.write("---")
 col1, col2 = st.columns([1,3], gap="medium")
 col1.image("images/my_cv.png", caption="Resume")
 col2.markdown("#### Main projects")
-# st.components.v1.html('<p><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></p>')
 
-# sub2.write("Link")
-# sub2.markdown("[![LinkedIn](https://cdn.iconscout.com/icon/free/png-256/linkedin-1464529-1239440.png)](https://www.linkedin.com/in/rodrigo-mendes-pinto/)")
+with col2:
+    tab1, tab2, tab3, tab4 = st.tabs(["Braga's Cafes", "City Categorization", "Data Analysis", "Others"])
+    # video_file = open("videos/bragas-cafes-presentation.mp4", "rb")
+    # video_bytes = video_file.read()
+    # with tab1:
+    #     st.video(video_bytes)
+    #     with st.expander("Read more."):
+    #         st.write("Project that records and displays cafes visited in Braga-PT (more cities may be included), with attribution of specific information for laptop users, such as wifi signal quality, sockets, in addition to the price of coffee and location. It also allows filling out a form for visiting and inclusion on the platform.")
+
+st.components.v1.html('<p><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></p>')
