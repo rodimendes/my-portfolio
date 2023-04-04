@@ -58,11 +58,11 @@ col2.markdown("#### Main projects")
 
 with col2:
     tab1, tab2, tab3, tab4 = st.tabs(["Braga's Cafes", "City Categorization", "Data Analysis", "Others"])
-    # video_file = open("videos/bragas-cafes-presentation.mp4", "rb")
-    # video_bytes = video_file.read()
-    # with tab1:
-    #     st.video(video_bytes)
-    #     with st.expander("Read more."):
-    #         st.write("Project that records and displays cafes visited in Braga-PT (more cities may be included), with attribution of specific information for laptop users, such as wifi signal quality, sockets, in addition to the price of coffee and location. It also allows filling out a form for visiting and inclusion on the platform.")
+    video_file = open("videos/bragas-cafes-presentation.mp4", "rb")
+    video_bytes = video_file.read()
+    with tab1:
+        st.video(video_bytes)
+        with st.expander("Read more."):
+            st.write("Project that records and displays cafes visited in Braga-PT (more cities may be included), with attribution of specific information for laptop users, such as wifi signal quality, sockets, in addition to the price of coffee and location. It also allows filling out a form for visiting and inclusion on the platform.")
 
 st.components.v1.html('<p><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></p>')
