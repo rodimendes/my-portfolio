@@ -19,7 +19,7 @@ st.markdown("##### Data Engineer - Data Scientist")
 st.info("")
 col1, col2, col3, col4 = st.columns([0.25,1,0.25,3])
 col2.image("images/me.png")
-col4.markdown(""" **Hi, I am Rodrigo Pinto. I am a Junior Data Engineer Data Scientist, current living in Portugal.**  \n**I dedicate my time to personal projects, freelance work, strengthening concepts and learning new tools. Wants to know? I'm discovering many things... I'm interested in remote or hybrid work.**  \n**Below I present some of what I have been developing.**""")
+col4.markdown(""" **Hi, I am Rodrigo Pinto. I am a Junior Data Engineer, current living in Portugal.**  \n**I dedicate my time to personal projects, freelance work, strengthening concepts and learning new tools. Wants to know? I'm discovering many things... I'm interested in remote or hybrid work.**  \n**Below I present some of what I have been developing.**""")
 st.write("---")
 st.markdown("#### My tech stack")
 with st.container():
