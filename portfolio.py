@@ -1,4 +1,6 @@
 import streamlit as st
+import streamlit.components.v1 as components
+
 
 st.set_page_config(
     page_title="Rodrigo's Stuff",
@@ -9,6 +11,9 @@ st.set_page_config(
 CSS = """
 h1, h2, h3, h5 {
     text-align: center;
+}
+.icon {
+    font-size: 12px;
 }
 """
 
@@ -57,12 +62,20 @@ col1.image("images/my_cv.png", caption="Resume")
 col2.markdown("#### Main projects")
 
 with col2:
-    tab1, tab2, tab3, tab4 = st.tabs(["Braga's Cafes", "City Categorization", "Data Analysis", "Others"])
+    tab1, tab2 = st.tabs(["Tennis Matches Analysis", "Braga's Cafes"])
+    with tab1:
+        components.iframe(src="https://rodimendes-where-are-u-best-home-o6dm9d.streamlit.app/?embed=True", scrolling=False)
+        with st.expander("Read more."):
+            st.markdown("[Where are U best](https://rodimendes-where-are-u-best-home-o6dm9d.streamlit.app/) is a project that seeks to identify the degree of influence of the temperature and humidity on female tennis players. For this the python script gets data from the official webpage of female tennis players, that is, Women's Tennis Association - WTA.")
     video_file = open("videos/bragas-cafes-presentation.mp4", "rb")
     video_bytes = video_file.read()
-    with tab1:
+    with tab2:
         st.video(video_bytes)
         with st.expander("Read more."):
             st.write("Project that records and displays cafes visited in Braga-PT (more cities may be included), with attribution of specific information for laptop users, such as wifi signal quality, sockets, in addition to the price of coffee and location. It also allows filling out a form for visiting and inclusion on the platform.")
 
-st.components.v1.html('<p><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></p>')
+freepick = """
+    <a class='icon' href='https://www.flaticon.com/'>Great icons created by Freepik - Flaticon</a>
+"""
+footercol1, footercol2 = st.columns([10, 2])
+footercol2.markdown(freepick, unsafe_allow_html=True)
