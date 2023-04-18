@@ -64,9 +64,9 @@ col2.markdown("#### Main projects")
 with col2:
     tab1, tab2 = st.tabs(["Tennis Matches Analysis", "Braga's Cafes"])
     with tab1:
-        components.iframe(src="https://rodimendes-where-are-u-best-home-o6dm9d.streamlit.app/?embed=True", scrolling=False)
+        components.iframe(src="https://rodimendes-where-are-u-best--home-ecg75z.streamlit.app/?embed=True", scrolling=False)
         with st.expander("Read more."):
-            st.markdown("[Where are U best](https://rodimendes-where-are-u-best-home-o6dm9d.streamlit.app/) is a project that seeks to identify the degree of influence of the temperature and humidity on female tennis players. For this the python script gets data from the official webpage of female tennis players, that is, Women's Tennis Association - WTA.")
+            st.markdown("[Where are U best](https://rodimendes-where-are-u-best--home-ecg75z.streamlit.app/) is a project that seeks to identify the degree of influence of the temperature and humidity on female tennis players. For this the python script gets data from the official webpage of female tennis players, that is, Women's Tennis Association - WTA.")
     video_file = open("videos/bragas-cafes-presentation.mp4", "rb")
     video_bytes = video_file.read()
     with tab2:
