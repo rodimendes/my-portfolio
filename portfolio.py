@@ -68,10 +68,13 @@ with col2:
         components.iframe(src="https://rodimendes-where-are-u-best--home-ecg75z.streamlit.app/?embed=True", scrolling=False)
         with st.expander("Read more."):
             st.markdown("[Where are U best](https://rodimendes-where-are-u-best--home-ecg75z.streamlit.app/) is a project that seeks to identify the degree of influence of the temperature and humidity on female tennis players. For this the python script gets data from the official webpage of female tennis players, that is, Women's Tennis Association - WTA.")
+    # video_file = open("videos/bragas-cafes-presentation.mp4", "rb")
+    # video_bytes = video_file.read()
     with tab2:
-        components.iframe(src="https://bragas-cafe.up.railway.app/", scrolling=False)
+        # st.video(video_bytes)
+        components.iframe(src="https://bragas-cafe.up.railway.app/", scrolling=True)
         with st.expander("Read more."):
-            st.write("Project that records and displays cafes visited in Braga-PT (more cities may be included), with attribution of specific information for laptop users, such as wifi signal quality, sockets, in addition to the price of coffee and location. It also allows filling out a form for visiting and inclusion on the platform.")
+            st.write("[Cafes computer friendly](https://bragas-cafe.up.railway.app/) records and displays cafes visited in Braga-PT (more cities may be included), with attribution of specific information for laptop users, such as wifi signal quality, sockets, in addition to the price of coffee and location. It also allows filling out a form for visiting and inclusion on the platform.")
 
 freepick = """
     <a class='icon' href='https://www.flaticon.com/'>Great icons created by Freepik - Flaticon</a>
